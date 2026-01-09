@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+    <div class="container">
+        <div class="rotatefactor1">
+            Rotate Factor 1
+            <input type="range" min="-360" max="360" id="rotatefactor1" value="0" >
+            <span id="rf1val"></span>
+        </div>
+        <div class="rotatefactor2">
+            Rotate Factor 2
+            <input type="range" min="-360" max="360" id="rotatefactor2" value="0" >
+            <span id="rf2val"></span>
+        </div>
+        <div class="thickness">
+            Thickness
+            <input type="range" min="0" max="100" id="thickness" value="10" >
+            <span id="thickval"></span>
+        </div>
+        <div class="depth">
+            Depth
+            <input type="range" min="0" max="50" id="depth" value="5" >
+            <span id="depthval"></span>
+        </div>
+        <div class="speed">
+            Speed
+            <input type="range" min="0" max="100" id="speed" value="5" >
+            <span id="speedval"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

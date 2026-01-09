@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#canvas{
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+
+input{
+    color: white;
+    z-index: 1;
+    width: 500px;
+}
