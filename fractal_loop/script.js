@@ -11,6 +11,9 @@ const depthval=document.getElementById('depthval');
 const speedfactor=document.getElementById('speed');
 const speedval=document.getElementById('speedval');
 
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight
+
 
 
 let maxdepth=0;
@@ -80,7 +83,7 @@ function draw(startX,startY,width,length,rotate,depth,factor){
 }
 function animate(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    draw(500,500,width,100,0,0,10);
+    draw(window.innerWidth/2,window.innerHeight/2+200,width,100,0,0,10);
     if(maxdepth<totaldepth){
         maxdepth+=speed/100;
         requestAnimationFrame(animate);
